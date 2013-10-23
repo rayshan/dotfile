@@ -22,7 +22,7 @@ PATH="/usr/local/git/bin:$PATH"
 GIT_COMPLETION_FILE='/usr/local/git/contrib/completion/git-completion.bash';
 GIT_PROMPT_FILE='/usr/local/git/contrib/completion/git-prompt.sh';
 if [ -f $GIT_COMPLETION_FILE ]; then
-  . $GIT_COMPLETION_FILE
+	. $GIT_COMPLETION_FILE
 fi
 if [ -f $GIT_PROMPT_FILE ]; then
 	. $GIT_PROMPT_FILE
@@ -30,10 +30,12 @@ fi
 export GIT_PS1_SHOWDIRTYSTATE=true # adds * to branch if branch was changed
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 
-# \h host name, \u user name, \w current path, \W current working directory 
+# \h host name, \u user name, \w current path, \W CWD current working directory
 STARTCOLOR1='\[\e[0;35m\]'; # purple
 STARTCOLOR2='\[\e[0;90m\]'; # dark gray
 ENDCOLOR='\[\e[m\]';
+UN='@\U'
+HN='\H'
 CWD='\W'
 GITBRANCH='$(__git_ps1 "(%s)")'
 PROMPT=' > '
