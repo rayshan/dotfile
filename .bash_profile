@@ -42,3 +42,12 @@ PROMPT=' > '
 export PS1=$STARTCOLOR1$CWD$ENDCOLOR$STARTCOLOR2$GITBRANCH$ENDCOLOR$STARTCOLOR1$PROMPT$ENDCOLOR
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+###
+# alias
+###
+
+alias ll="ls -la"
+alias c="clear"
+alias g="git"
+alias ".."=". ~/.bash_profile"
