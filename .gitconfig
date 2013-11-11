@@ -1,0 +1,9 @@
+# global gitconfig
+# *nix ~/.gitconfig
+# windows ???
+
+[user]
+  name = Ray Shan
+	email = ray@rayshan.com
+[core]
+  excludesfile = ???
